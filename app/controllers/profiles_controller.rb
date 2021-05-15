@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: %i[ show edit update destroy ]
+  before_action :show_profile, only: %i[ new create ]
   skip_before_action :ensure_profile!
 
   # GET /profiles or /profiles.json
@@ -62,6 +63,11 @@ class ProfilesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_profile
       @profile = current_user.profile
+    end
+
+    def show_profile
+      return unless current_user.profile
+      redirect_to current_user.profile
     end
 
     # Only allow a list of trusted parameters through.

@@ -5,9 +5,3 @@ one:
   name: "Scott"
   locale: <%= Profile.locales.keys.first %>
   timezone: <%= Profile.timezones.keys.first %>
-
-two:
-  user: two
-  name: "Jamie"
-  locale: <%= Profile.locales.keys.last %>
-  timezone: <%= Profile.timezones.keys.last %>
