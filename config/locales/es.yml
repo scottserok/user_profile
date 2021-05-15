@@ -1,4 +1,9 @@
 es:
+  application:
+    header:
+      widget: "Widgets"
+      account: "Mi Cuenta"
+      logout: "Cerrar Sesión"
   save: "Enviar"
   helpers:
     label:

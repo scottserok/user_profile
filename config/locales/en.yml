@@ -1,4 +1,9 @@
 en:
+  application:
+    header:
+      widget: "Widgets"
+      account: "My Account"
+      logout: "Logout"
   save: "Save"
   helpers:
     label:
