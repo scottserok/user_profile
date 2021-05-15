@@ -14,5 +14,8 @@
       <% end %>
     </ul>
   </nav>
+  <% if user_signed_in? %>
+    <p style="text-align: right;"><%= l Time.current %></p>
+  <% end %>
 </header>
 <p id="notice"><%= notice %></p>
