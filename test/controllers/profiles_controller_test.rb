@@ -9,11 +9,6 @@ class ProfilesControllerTest < ActionDispatch::IntegrationTest
     @profile = @user.profile
   end
 
-  test "should get index" do
-    get profiles_url
-    assert_response :success
-  end
-
   test "when no profile, should get new" do
     @user = users(:two)
     sign_in @user

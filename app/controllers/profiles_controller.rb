@@ -3,11 +3,6 @@ class ProfilesController < ApplicationController
   before_action :show_profile, only: %i[ new create ]
   skip_before_action :ensure_profile!
 
-  # GET /profiles or /profiles.json
-  def index
-    @profiles = Profile.all
-  end
-
   # GET /profiles/1 or /profiles/1.json
   def show
   end
