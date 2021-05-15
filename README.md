@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails app showcasing user authentication and profile management. Devise is
+installed but not customized. Localization of the app is incomplete but
+demonstrates the usefullness of a user profile modeled outside of the Devise
+user model. The result is the start of an app that's a little easier to manage
+compared to storing profile data in the users table and customizing Devise.
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    bundle install
+    rails s
