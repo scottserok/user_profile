@@ -1,5 +1,6 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: %i[ show edit update destroy ]
+  skip_before_action :ensure_profile!
 
   # GET /profiles or /profiles.json
   def index
