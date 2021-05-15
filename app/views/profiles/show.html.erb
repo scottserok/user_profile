@@ -1,9 +1,4 @@
 <p>
-  <strong>User:</strong>
-  <%= @profile.user_id %>
-</p>
-
-<p>
   <strong>Name:</strong>
   <%= @profile.name %>
 </p>
@@ -18,5 +13,5 @@
   <%= @profile.timezone %>
 </p>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<%= link_to 'Edit Profile', edit_profile_path(@profile) %> |
+<%= link_to 'Change Password', edit_user_registration_path %>
