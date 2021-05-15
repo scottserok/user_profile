@@ -19,6 +19,7 @@ es:
     edit:
       heading: "Mi Perfil"
     show:
+      heading: "Mi Perfil"
       name: "Nombre"
       locale: "Lugar"
       timezone: "Zona horaria"

@@ -19,6 +19,7 @@ en:
     edit:
       heading: "My Profile"
     show:
+      heading: "My Profile"
       name: "Name"
       locale: "Locale"
       timezone: "Time zone"
