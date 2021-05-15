@@ -1,3 +1,21 @@
 en:
+  save: "Save"
+  helpers:
+    label:
+      profile:
+        name: "Name"
+        locale: "Locale"
+        timezone: "Time zone"
   notice:
     complete_registration: "Create a profile to complete your registration."
+    saved: "Saved successfully!"
+    destroyed: "Destroyed successfully!"
+  profiles:
+    edit:
+      heading: "My Profile"
+    show:
+      name: "Name"
+      locale: "Locale"
+      timezone: "Time zone"
+      edit: "Edit Profile"
+      change_password: "Change Password"

@@ -1,3 +1,21 @@
 es:
+  save: "Enviar"
+  helpers:
+    label:
+      profile:
+        name: "Nombre"
+        locale: "Lugar"
+        timezone: "Zona horaria"
   notice:
     copmlete_registration: "Crea un perfil para completar tu registro."
+    saved: "¡Guardado exitosamente!"
+    destroyed: "¡Destruido con éxito!!"
+  profiles:
+    edit:
+      heading: "Mi Perfil"
+    show:
+      name: "Nombre"
+      locale: "Lugar"
+      timezone: "Zona horaria"
+      edit: "Editar perfil"
+      change_password: "Cambiar la contraseña"

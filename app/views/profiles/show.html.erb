@@ -1,17 +1,17 @@
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('.name') %>:</strong>
   <%= @profile.name %>
 </p>
 
 <p>
-  <strong>Locale:</strong>
+  <strong><%= t('.locale') %>:</strong>
   <%= @profile.locale %>
 </p>
 
 <p>
-  <strong>Timezone:</strong>
+  <strong><%= t('.timezone') %>:</strong>
   <%= @profile.timezone %>
 </p>
 
-<%= link_to 'Edit Profile', edit_profile_path(@profile) %> |
-<%= link_to 'Change Password', edit_user_registration_path %>
+<%= link_to t('.edit'), edit_profile_path(@profile) %> |
+<%= link_to t('.change_password'), edit_user_registration_path %>
