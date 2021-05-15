@@ -2,12 +2,12 @@
 
 one:
   user: one
-  name: MyString
-  locale: MyString
-  timezone: MyString
+  name: "Scott"
+  locale: <%= Profile.locales.keys.first %>
+  timezone: <%= Profile.timezones.keys.first %>
 
 two:
   user: two
-  name: MyString
-  locale: MyString
-  timezone: MyString
+  name: "Jamie"
+  locale: <%= Profile.locales.keys.last %>
+  timezone: <%= Profile.timezones.keys.last %>

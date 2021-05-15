@@ -1,7 +1,11 @@
 require "test_helper"
 
 class ProfilesControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
+    @user = users(:one)
+    sign_in @user
     @profile = profiles(:one)
   end
 
@@ -21,6 +25,11 @@ class ProfilesControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to profile_url(Profile.last)
+    profile = Profile.last
+    assert_equal(@user, profile.user)
+    assert_equal("Scott", profile.name)
+    assert_equal("en", profile.locale)
+    assert_equal("Etc/GMT+12", profile.timezone)
   end
 
   test "should show profile" do
