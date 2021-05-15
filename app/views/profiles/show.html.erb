@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @profile.user_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @profile.locale %>
+</p>
+
+<p>
+  <strong>Timezone:</strong>
+  <%= @profile.timezone %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
